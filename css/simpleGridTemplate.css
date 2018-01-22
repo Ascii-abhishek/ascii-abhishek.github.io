@@ -109,6 +109,7 @@ header {
 }
 .intro .column p {
 	color: #FFFFFF;
+	font-size: 20px 
 }
 .cards {
 	width: 100%;
@@ -167,8 +168,8 @@ header {
 }
 footer {
 	background-color: #535353;
-	padding-top: 60px;
-	padding-bottom: 60PX;
+	padding-top: 40px;
+	padding-bottom: 40PX;
 }
 .intro {
 	display: inline-block;
