@@ -1,0 +1,6 @@
+site_name: Tech Handbook
+nav:
+    - Home: index.md
+    - Python Basics: py_basics.md
+    - About: about.md
+theme: readthedocs
