@@ -2,5 +2,7 @@ site_name: Tech Handbook
 nav:
     - Home: index.md
     - Python Basics: py_basics.md
+    - PIP Commands: pip.md
+    - List and Dictionary: list_and_dict.md
     - About: about.md
 theme: readthedocs
