@@ -1,0 +1,8 @@
+{
+    "links": {
+        "sidebar": {
+            "Report Error": "mailto:abhishek56987@gmail.com"
+        }
+    },
+    "plugins": ["collapsible-chapters"]
+}
