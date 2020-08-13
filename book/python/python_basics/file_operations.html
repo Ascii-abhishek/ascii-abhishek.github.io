@@ -1,0 +1,817 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>IO (Working with File) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.5.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="context_manager.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="mailto:abhishek56987@gmail.com" target="_blank" class="custom-link">Report Error</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    📢 Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Python</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../learning_path.html">
+            
+                <a href="../learning_path.html">
+            
+                    
+                    📜 Python Learning Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    📌 Python Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="list_dict.html">
+            
+                <a href="list_dict.html">
+            
+                    
+                    List and Dictionary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="string_number.html">
+            
+                <a href="string_number.html">
+            
+                    
+                    String and Numbers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="exception_handeling.html">
+            
+                <a href="exception_handeling.html">
+            
+                    
+                    Exception Handeling
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="context_manager.html">
+            
+                <a href="context_manager.html">
+            
+                    
+                    Context Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.5" data-path="file_operations.html">
+            
+                <a href="file_operations.html">
+            
+                    
+                    IO (Working with File)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.6" >
+            
+                <span>
+            
+                    
+                    Multithreading
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../py_modules/">
+            
+                <a href="../py_modules/">
+            
+                    
+                    📚 Python Modules
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../py_modules/subprocess.html">
+            
+                <a href="../py_modules/subprocess.html">
+            
+                    
+                    Subprocess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../py_modules/os.html">
+            
+                <a href="../py_modules/os.html">
+            
+                    
+                    OS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../py_modules/maths.html">
+            
+                <a href="../py_modules/maths.html">
+            
+                    
+                    Math
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../py_modules/statistics.html">
+            
+                <a href="../py_modules/statistics.html">
+            
+                    
+                    Statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../py_modules/datetime.html">
+            
+                <a href="../py_modules/datetime.html">
+            
+                    
+                    DateTime
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" >
+            
+                <span>
+            
+                    
+                    Calendar
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../py_modules/random.html">
+            
+                <a href="../py_modules/random.html">
+            
+                    
+                    Random
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../py_modules/regular_expression.html">
+            
+                <a href="../py_modules/regular_expression.html">
+            
+                    
+                    RE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.9" >
+            
+                <span>
+            
+                    
+                    SYS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.10" data-path="../py_modules/venv.html">
+            
+                <a href="../py_modules/venv.html">
+            
+                    
+                    Venv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.11" data-path="../py_modules/csv.html">
+            
+                <a href="../py_modules/csv.html">
+            
+                    
+                    CSV
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.12" data-path="../py_modules/json.html">
+            
+                <a href="../py_modules/json.html">
+            
+                    
+                    JSON
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.13" data-path="../py_modules/pandas.html">
+            
+                <a href="../py_modules/pandas.html">
+            
+                    
+                    PANDAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.14" >
+            
+                <span>
+            
+                    
+                    SQLITE
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.15" >
+            
+                <span>
+            
+                    
+                    REQUESTS
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.16" >
+            
+                <span>
+            
+                    
+                    JUPYTER
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.17" >
+            
+                <span>
+            
+                    
+                    PIL
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.18" >
+            
+                <span>
+            
+                    
+                    BEAUTIFULSOUP
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.19" >
+            
+                <span>
+            
+                    
+                    TKINTER
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20" data-path="../../django/readme.html">
+            
+                <a href="../../django/readme.html">
+            
+                    
+                    DJANGO
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.20.1" data-path="../../django/">
+            
+                <a href="../../django/#CLI">
+            
+                    
+                    CLI Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20.2" data-path="../../django/">
+            
+                <a href="../../django/#Directory">
+            
+                    
+                    Directory Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.20.3" data-path="../../django/">
+            
+                <a href="../../django/#Admin">
+            
+                    
+                    Admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../other/other.html">
+            
+                <a href="../../other/other.html">
+            
+                    
+                    🏆 Other
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../../other/adb_commands.html">
+            
+                <a href="../../other/adb_commands.html">
+            
+                    
+                    ADB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" >
+            
+                <span>
+            
+                    
+                    GIT
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" >
+            
+                <span>
+            
+                    
+                    Markdown
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" >
+            
+                <span>
+            
+                    
+                    Shell Script
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >IO (Working with File)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="working-with-files-file-io">Working with Files (File IO)</h1>
+<hr>
+<pre><code class="lang-python"><span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abc.txt&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> f:
+    f.name
+    f.mode <span class="hljs-comment"># r (read)</span>
+    f.closed <span class="hljs-comment"># False</span>
+    f.read(size=n) <span class="hljs-comment"># after n characers seek to next character</span>
+    f.readline() <span class="hljs-comment"># return first line and seek to start of second line</span>
+    f.tell() <span class="hljs-comment"># current seek position</span>
+    f.seek(<span class="hljs-number">0</span>) <span class="hljs-comment"># 0: start; 1: current; 2:end of the file</span>
+    <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> f:
+        print(line, end=<span class="hljs-string">&apos;&apos;</span>) <span class="hljs-comment"># print each line</span>
+
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abcd.txt&apos;</span>, <span class="hljs-string">&apos;w&apos;</span>) <span class="hljs-keyword">as</span> f:
+    <span class="hljs-comment"># w: overwrite; a: append</span>
+    f.write(<span class="hljs-string">&apos;text&apos;</span>)
+    <span class="hljs-comment"># if we f.write() again in same open block. text will be appended</span>
+
+<span class="hljs-comment"># copy from one file to other</span>
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abc.txt&apos;</span>, <span class="hljs-string">&apos;r&apos;</span>) <span class="hljs-keyword">as</span> rf:
+    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abcd.txt&apos;</span>, <span class="hljs-string">&apos;w&apos;</span>) <span class="hljs-keyword">as</span> wf:
+        <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> rf:
+            wf.write(line)
+
+<span class="hljs-comment"># make a copy of image file</span>
+<span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abc.jpg&apos;</span>, <span class="hljs-string">&apos;rb&apos;</span>) <span class="hljs-keyword">as</span> rf:
+    <span class="hljs-keyword">with</span> open(<span class="hljs-string">&apos;abcd.jpg&apos;</span>, <span class="hljs-string">&apos;wb&apos;</span>) <span class="hljs-keyword">as</span> wf:
+        <span class="hljs-keyword">for</span> line <span class="hljs-keyword">in</span> rf:
+            wf.write(line)
+</code></pre>
+<h2 id="here-is-a-list-of-the-different-modes-of-opening-a-file">Here is a list of the different modes of opening a file:</h2>
+<ul>
+<li><p><code>r</code>\
+Opens a file for reading only. The file pointer is placed at the beginning of the file. This is the default mode.</p>
+</li>
+<li><p><code>rb</code> \
+Opens a file for reading only in binary format. The file pointer is placed at the beginning of the file. This is the default mode.</p>
+</li>
+<li><p><code>r+</code>\
+Opens a file for both reading and writing. The file pointer will be at the beginning of the file.</p>
+</li>
+<li><p><code>rb+</code>\
+Opens a file for both reading and writing in binary format. The file pointer will be at the beginning of the file.</p>
+</li>
+<li><p><code>w</code>\
+Opens a file for writing only. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</p>
+</li>
+<li><p><code>wb</code>\
+Opens a file for writing only in binary format. Overwrites the file if the file exists. If the file does not exist, creates a new file for writing.</p>
+</li>
+<li><p><code>w+</code>\
+Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</p>
+</li>
+<li><p><code>wb+</code>\
+Opens a file for both writing and reading in binary format. Overwrites the existing file if the file exists. If the file does not exist, creates a new file for reading and writing.</p>
+</li>
+<li><p><code>a</code>\
+Opens a file for appending. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</p>
+</li>
+<li><p><code>ab</code>\
+Opens a file for appending in binary format. The file pointer is at the end of the file if the file exists. That is, the file is in the append mode. If the file does not exist, it creates a new file for writing.</p>
+</li>
+<li><p><code>a+</code>\
+Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</p>
+</li>
+<li><p><code>ab+</code>\
+Opens a file for both appending and reading in binary format. The file pointer is at the end of the file if the file exists. The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="context_manager.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Context Manager">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"IO (Working with File)","level":"2.2.5","depth":2,"next":{"title":"Multithreading","level":"2.2.6","depth":2,"ref":"","articles":[]},"previous":{"title":"Context Manager","level":"2.2.4","depth":2,"path":"python/python_basics/context_manager.md","ref":"python/python_basics/context_manager.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Report Error":"mailto:abhishek56987@gmail.com"}},"gitbook":"*"},"file":{"path":"python/python_basics/file_operations.md","mtime":"2020-07-19T11:16:36.370Z","type":"markdown"},"gitbook":{"version":"3.5.2","time":"2020-08-13T18:49:35.427Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

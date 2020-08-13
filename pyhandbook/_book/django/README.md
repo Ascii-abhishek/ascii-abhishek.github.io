@@ -1,7 +1,0 @@
-# Django
-
-# CLI
-
-# Directory
-
-# Admin
